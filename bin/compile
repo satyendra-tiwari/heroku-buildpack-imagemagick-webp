@@ -67,7 +67,7 @@ if [ ! -f $CACHE_FILE ]; then
 
   # install imagemagick
 
-  IMAGE_MAGICK_VERSION="7.0.7-15"
+  IMAGE_MAGICK_VERSION="6.9.2-10"
   IMAGE_MAGICK_FILE="ImageMagick-$IMAGE_MAGICK_VERSION.tar.gz"
   IMAGE_MAGICK_DIR="ImageMagick-$IMAGE_MAGICK_VERSION"
   IMAGE_MAGICK_URL="https://mirraw.s3.amazonaws.com/libraries/image-magick/$IMAGE_MAGICK_FILE"
@@ -108,4 +108,4 @@ ACTUAL_INSTALL_PATH="$HOME/vendor/imagemagick-webp"
 mkdir -p $(dirname $PROFILE_PATH)
 echo "export PATH=$ACTUAL_INSTALL_PATH/bin:\$PATH" >> $PROFILE_PATH
 echo "export LD_LIBRARY_PATH=$ACTUAL_INSTALL_PATH/lib:\$LD_LIBRARY_PATH" >> $PROFILE_PATH
-echo "export MAGICK_CONFIGURE_PATH=$ACTUAL_INSTALL_PATH/etc/ImageMagick-7" >> $PROFILE_PATH
+echo "export MAGICK_CONFIGURE_PATH=$ACTUAL_INSTALL_PATH/etc/ImageMagick-6" >> $PROFILE_PATH
